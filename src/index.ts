@@ -1,4 +1,4 @@
-import axios, { AxiosResponse } from 'axios';
+import axios from 'axios';
 
 const ENDPOINT = 'https://meigen.doodlenote.net/api/json.php';
 
@@ -14,7 +14,9 @@ export type Meigen = {
 type MeigenApiResponse = Meigen[];
 
 const getMeigen = async (params?: MeigenRequestParams) => {
-  const response = await axios.get<MeigenApiResponse>(ENDPOINT);
+  const response = await axios.get<MeigenApiResponse>(ENDPOINT, {
+    params: params,
+  });
 
   return {
     status: response.status,
