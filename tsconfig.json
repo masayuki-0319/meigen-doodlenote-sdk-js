@@ -1,0 +1,30 @@
+{
+  "compilerOptions": {
+    /* Projects */
+    "target": "es6",
+    /* Modules */
+    "module": "esnext",
+    "rootDir": "./src",
+    /* Emit */
+    "declaration": true,
+    "outDir": "./build",
+    /* Interop Constraints */
+    "esModuleInterop": true,
+    "forceConsistentCasingInFileNames": true,
+    /* Type Checking */
+    "strict": true,
+    /* Completeness */
+    "skipLibCheck": true
+  },
+  "include": [
+    "src"
+  ],
+  "exclude": [
+    "build",
+  ],
+  "ts-node": {
+    "moduleTypes": {
+      "jest.config.ts": "cjs"
+    }
+  },
+}
