@@ -5,6 +5,7 @@
     /* Modules */
     "module": "esnext",
     "rootDir": "./src",
+    "moduleResolution": "node",
     /* Emit */
     "declaration": true,
     "outDir": "./build",
